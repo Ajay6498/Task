@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload and Attribute Management</title>
+</head>
+<body>
+    <h1>File Upload and Attribute Management</h1>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <input type="file" name="xmlFile"><br>
+        <input type="file" name="excelFile"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Display existing attributes -->
+
+<br><br>
+    <form action="/addAttribute" method="post">
+        <input type="text" name="name" placeholder="Attribute Name">
+        <input type="text" name="value" placeholder="Attribute Value">
+        <button type="submit">Add Attribute</button>
+    </form>
+
+    <!-- Display added attributes -->
+</body>
+</html>
